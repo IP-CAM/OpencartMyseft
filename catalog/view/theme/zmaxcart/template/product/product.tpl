@@ -135,14 +135,14 @@
           </div>
           <h1><?php echo $heading_title; ?></h1>
           <ul class="list-unstyled">
-<!--             <?php if($manufacturers_img) { ?>
+             <?php if($manufacturers_img) { ?>
             <li><a href="<?php echo $manufacturers; ?>"><?php echo ($manufacturers_img) ? '<img src="'.$manufacturers_img.'" title="'.$manufacturer.'" />' : '' ;?></a></li>
             <?php } else { ?>
             <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
-            <?php } ?> -->
-            <?php if ($manufacturer) { ?>
+            <?php } ?>
+            <!-- <?php if ($manufacturer) { ?>
             <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
-            <?php } ?> 
+            <?php } ?>  -->
             <li><?php echo $text_model; ?> <?php echo $model; ?></li>
             <?php if ($reward) { ?>
             <li><?php echo $text_reward; ?> <?php echo $reward; ?></li>
