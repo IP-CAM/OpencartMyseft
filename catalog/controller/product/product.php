@@ -284,12 +284,12 @@ class ControllerProductProduct extends Controller {
 
 			$this->load->model('tool/image');
 
-			// $manufacturer_image = $this->model_catalog_manufacturer->getManufacturer($product_info['manufacturer_id']);
-			// if($manufacturer_image){
-			// 	$data['manufacturers_img'] = $this->model_tool_image->resize($manufacturer_image['image'], 50, 50);
-			// } else  {
-			// 	$data['manufacturers_img'] = false;
-			// }
+			$manufacturer_image = $this->model_catalog_manufacturer->getManufacturer($product_info['manufacturer_id']);
+			if($manufacturer_image){
+				$data['manufacturers_img'] = $this->model_tool_image->resize($manufacturer_image['image'], 50, 50);
+			} else  {
+				$data['manufacturers_img'] = false;
+			}
 
 			if ($product_info['image']) {
 				$data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_popup_width'), $this->config->get($this->config->get('config_theme') . '_image_popup_height'));
