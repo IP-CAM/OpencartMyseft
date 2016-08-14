@@ -1,0 +1,4 @@
+﻿1. Create an OCMOD File:
+  - Upload file: unexpected token < in json at position 0
+ => Chú ý các dấu " và ' nếu chúng có màu sắc không bình thường thì đây có thể là nguyên nhân khiến ctrinh k đọc được file xml.
+Ví dụ: <add position="replace">, đổi thành <add position='replace'>

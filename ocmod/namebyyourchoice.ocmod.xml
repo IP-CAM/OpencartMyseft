@@ -1,0 +1,33 @@
+<modification>
+<name>Add Header Notification in the catalog and admin pages</name>
+<version>1.0</version>
+<link>http://isenselabs.com</link>
+<author>iSenseLabs</author>
+<code>isenselabs_header_notification</code>
+<file path='admin/view/template/common/header.tpl'>
+<operation>
+<search>
+<![CDATA[<header id=”header” class=”navbar navbar-static-top”>]]>
+</search>
+<add position='replace'>
+<![CDATA[
+<div id=”HeaderNotification” style=” background-color: #F54661; z-index-:99999;font-size:22px; text-align:center; color:#fff; position:fixed;width:100%;height: 40px-;line-height:40px;top:0px;”>Header Notification in Your Admin Panel</div><header id=”header” 
+class=”navbar navbar-static-top” style=”margin-top:40px;”>
+]]>
+</add>
+</operation>
+</file>
+<file path='catalog/view/theme/*/template/common/header.tpl'>
+<operation>
+<search>
+<![CDATA[</head>]]>
+</search>
+<add position='after'>
+<![CDATA[
+<div id=”HeaderNotification” style=” background-color: #F54661; z-index:99999;font-size:22px; text-align:center; color:#fff; position:fixed;width:100%;height: 
+40px;line-height:40px;top:0px;”>Header Notification in Your Store</div><header id=”header” 
+class=”navbar navbar-static-top” style=”margin-top:40px;”>]]>
+</add>
+</operation>
+</file>
+</modification>
