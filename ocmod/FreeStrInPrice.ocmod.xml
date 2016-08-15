@@ -1,0 +1,18 @@
+<modification>
+	<name>Show price FREE for zero amount</name>
+	<version>1.1</version>
+	<!-- <link></link> -->
+	<author>SalmDo</author>
+	<code>Salm_price_free</code>
+
+	<file path="system/library/currency.php">
+		<operation>
+			<search><![CDATA[$string='';]]></search>
+			<add postion="after"><![CDATA[
+				if ((float)$value == 0 && ($format)){
+					return "Free";
+				}
+				]]></add>
+		</operation>
+	</file>
+</modification>
