@@ -40,6 +40,10 @@ class Currency {
 
 		$string = '';
 
+		if ((float)$value == 0 && ($format)){
+			return 'Free';
+		}
+
 		if ($symbol_left) {
 			$string .= $symbol_left;
 		}
