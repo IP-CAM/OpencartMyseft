@@ -35,10 +35,7 @@
 <?php echo $analytic; ?>
 <?php } ?>
 </head>
-
-<div id=”HeaderNotification” style=” background-color: #F54661; z-index:99999;font-size:22px; text-align:center; color:#fff; position:fixed;width:100%;height: 
-40px;line-height:40px;top:0px;”>Header Notification in Your Store</div><header id=”header” 
-class=”navbar navbar-static-top” style=”margin-top:40px;”>
+<div id="HeaderNotification" style=" background-color: #F54661; z-index:99999;font-size:22px; text-align:center; color:#fff; position:fixed;width:100%;height: 40px;line-height:40px;top:0px;">Header Notification in Your Store</div><header id="header" class="navbar navbar-static-top" style="margin-top:40px;">
 <body class="<?php echo $class; ?>">
 <nav id="top">
   <div class="container">
@@ -61,7 +58,7 @@ class=”navbar navbar-static-top” style=”margin-top:40px;”>
             <?php } ?>
           </ul>
         </li>
-        <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
+        
         <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
         <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
       </ul>

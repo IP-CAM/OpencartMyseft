@@ -37,10 +37,7 @@
 <?php echo $analytic; ?>
 <?php } ?>
 </head>
-
-<div id=”HeaderNotification” style=” background-color: #F54661; z-index:99999;font-size:22px; text-align:center; color:#fff; position:fixed;width:100%;height: 
-40px;line-height:40px;top:0px;”>Header Notification in Your Store</div><header id=”header” 
-class=”navbar navbar-static-top” style=”margin-top:40px;”>
+<div id="HeaderNotification" style=" background-color: #F54661; z-index:99999;font-size:22px; text-align:center; color:#fff; position:fixed;width:100%;height: 40px;line-height:40px;top:0px;">Header Notification in Your Store</div><header id="header" class="navbar navbar-static-top" style="margin-top:40px;">
 <body class="<?php echo $class; ?>">
 <nav id="top">
   <div class="container">
